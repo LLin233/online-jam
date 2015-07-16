@@ -32,7 +32,9 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': 'MainController.main'
+  'get /': 'MainController.index',
+  'post /socket': 'SocketController.receive',
+  'get /init': 'SocketController.init'
 
   /***************************************************************************
   *                                                                          *

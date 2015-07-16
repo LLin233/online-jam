@@ -14,10 +14,11 @@ var AudioContext;
 })();
 
 var AudioEngine = (function () {
-    function play(freq) {
+    function play(type, freq) {
         var oscillator = audioContext.createOscillator();
         oscillator.connect(audioContext.destination);
         oscillator.frequency.value = freq;
+        oscillator.type = type;
         oscillator.start(0);
 
         return oscillator;

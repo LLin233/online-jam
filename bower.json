@@ -7,6 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "materialize": "~0.97.0",
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "sails.io.js": "~0.11.5"
   }
 }

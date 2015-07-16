@@ -6,7 +6,10 @@
  */
 
 module.exports = {
-	main: function(res, req) {
+	index: function(req, res) {
+        if(req.isSocket && req.method === 'POST') {
+            console.log('POST');
+        }
         res.view('homepage');
     }
 };
